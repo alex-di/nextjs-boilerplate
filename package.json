@@ -2,9 +2,9 @@
   "name": "zvooq-admin-2",
   "version": "2.0.0",
   "scripts": {
-    "dev": "next",
+    "dev": "rm -rf .next && node server.js",
     "build": "next build",
-    "start": "next start"
+    "start": "NODE_ENV=production node server.js"
   },
   "dependencies": {
     "babel-eslint": "^7.2.3",
@@ -12,10 +12,12 @@
     "babel-plugin-root-import": "^5.1.0",
     "babel-plugin-styled-components": "^1.1.4",
     "babel-preset-stage-0": "^6.24.1",
+    "body-parser": "^1.17.1",
     "css-loader": "^0.28.1",
     "eslint": "^3.19.0",
     "eslint-loader": "^1.7.1",
     "eslint-plugin-react": "^7.0.1",
+    "express": "^4.15.2",
     "file-loader": "^0.11.1",
     "next": "latest",
     "next-style-loader": "^0.3.1",
